@@ -1,0 +1,19 @@
+myhostname = mail.lab.local
+mydomain = lab.local
+myorigin = $mydomain
+inet_interfaces = all
+inet_protocols = ipv4
+mydestination = $myhostname, localhost.$mydomain, localhost
+home_mailbox = Maildir/
+mynetworks = 127.0.0.0/8, 192.168.20.0/24, 192.168.30.0/24
+stmpd_relay_restirctions = permit_mynetwork, permit_sasl_authenticated, reject_unauth_destination
+stmpd_reipient_restrictions = permit_mynetwork, permit_sasl_authenticated, reject_unauth_destination
+
+# new configuration
+virtual_mailbox_maps = ldap:/etc/postfix/ldap-mailbox.cf
+virtual_mailbox_base = /
+virtual_mailbox_domains = lab.local
+virtual_uid_maps = static:10001
+virtual_gid_maps = static:10001
+virtual_transport = virtual
+compatibility_level = 3.6

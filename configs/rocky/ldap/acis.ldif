@@ -1,0 +1,9 @@
+dn: ou=people,dc=lab,dc=local
+changetype: modify
+add: aci
+aci: (targetattr="mail || uid || cn || sn")(version 3.0; acl "postfix-read-people"; allow (read,search) userdn="ldap:///cn=postfix,ou=services,dc=lab,dc=local";)
+
+dn: ou=people,dc=lab,dc=local
+changetype: modify
+add: aci
+aci: (targetattr="*")(version 3.0; acl "dovecot-read-people"; allow (read,search) userdn="ldap:///cn=dovecot,ou=services,dc=lab,dc=local";)

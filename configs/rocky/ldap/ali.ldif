@@ -1,0 +1,15 @@
+dn: uid=ali,ou=people,dc=lab,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+cn: Ali
+sn: Ali
+uid: ali
+uidNumber: 10001
+gidNumber: 10001
+homeDirectory: /home/ali
+loginShell: /bin/bash
+mail: ali@lab.local
+userPassword: 12345678

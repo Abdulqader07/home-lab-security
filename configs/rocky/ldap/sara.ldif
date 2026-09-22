@@ -1,0 +1,15 @@
+dn: uid=sara,ou=people,dc=lab,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+cn: Sara
+sn: Sara
+uid: sara
+uidNumber: 10002
+gidNumber: 10002
+homeDirectory: /home/sara
+loginShell: /bin/bash
+mail: sara@lab.local
+userPassword: 12345678

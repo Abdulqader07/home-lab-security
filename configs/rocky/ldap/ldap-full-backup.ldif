@@ -1,0 +1,158 @@
+# extended LDIF
+#
+# LDAPv3
+# base <dc=lab,dc=local> with scope subtree
+# filter: (objectclass=*)
+# requesting: ALL
+#
+
+# lab.local
+dn: dc=lab,dc=local
+objectClass: top
+objectClass: domain
+dc: lab
+description: dc=lab,dc=local
+
+# groups, lab.local
+dn: ou=groups,dc=lab,dc=local
+objectClass: top
+objectClass: organizationalunit
+ou: groups
+
+# people, lab.local
+dn: ou=people,dc=lab,dc=local
+objectClass: top
+objectClass: organizationalunit
+ou: people
+
+# permissions, lab.local
+dn: ou=permissions,dc=lab,dc=local
+objectClass: top
+objectClass: organizationalunit
+ou: permissions
+
+# services, lab.local
+dn: ou=services,dc=lab,dc=local
+objectClass: top
+objectClass: organizationalunit
+ou: services
+
+# demo_group, Groups, lab.local
+dn: cn=demo_group,ou=Groups,dc=lab,dc=local
+objectClass: top
+objectClass: groupOfNames
+objectClass: posixGroup
+objectClass: nsMemberOf
+cn: demo_group
+gidNumber: 99999
+
+# group_admin, permissions, lab.local
+dn: cn=group_admin,ou=permissions,dc=lab,dc=local
+objectClass: top
+objectClass: groupOfNames
+objectClass: nsMemberOf
+cn: group_admin
+
+# group_modify, permissions, lab.local
+dn: cn=group_modify,ou=permissions,dc=lab,dc=local
+objectClass: top
+objectClass: groupOfNames
+objectClass: nsMemberOf
+cn: group_modify
+
+# user_admin, permissions, lab.local
+dn: cn=user_admin,ou=permissions,dc=lab,dc=local
+objectClass: top
+objectClass: groupOfNames
+objectClass: nsMemberOf
+cn: user_admin
+
+# user_modify, permissions, lab.local
+dn: cn=user_modify,ou=permissions,dc=lab,dc=local
+objectClass: top
+objectClass: groupOfNames
+objectClass: nsMemberOf
+cn: user_modify
+
+# user_passwd_reset, permissions, lab.local
+dn: cn=user_passwd_reset,ou=permissions,dc=lab,dc=local
+objectClass: top
+objectClass: groupOfNames
+objectClass: nsMemberOf
+cn: user_passwd_reset
+
+# user_private_read, permissions, lab.local
+dn: cn=user_private_read,ou=permissions,dc=lab,dc=local
+objectClass: top
+objectClass: groupOfNames
+objectClass: nsMemberOf
+cn: user_private_read
+
+# ali, people, lab.local
+dn: uid=ali,ou=people,dc=lab,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+cn: Ali
+sn: Ali
+uid: ali
+uidNumber: 10001
+gidNumber: 10001
+homeDirectory: /home/ali
+loginShell: /bin/bash
+mail: ali@lab.local
+userPassword:: e1BCS0RGMi1TSEE1MTJ9MTAwMDAwJE1YZDZsREpkMGNrY1dhZlBCYm55L3dONlg
+ vcEUxNEFVJDlQUVNyNXFUK25jNFd1Ui9zSWVMMUhrVnFhdVRWQ1RremgwTDlyS21tUnJLQ1RjWFFT
+ dnVZQWhVc1hwOG91WUJ5eFBla29aOXlieS9GSFdtd0VHWndnPT0=
+
+# sara, people, lab.local
+dn: uid=sara,ou=people,dc=lab,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+cn: Sara
+sn: Sara
+uid: sara
+uidNumber: 10002
+gidNumber: 10002
+homeDirectory: /home/sara
+loginShell: /bin/bash
+mail: sara@lab.local
+userPassword:: e1BCS0RGMi1TSEE1MTJ9MTAwMDAwJHREKzF3UStsZTdCRW1JdUdCUk9VQ3FjNkQ
+ rMmFHRzhwJG5hdTNKWFlKQ3MrYmhSeS9sVm9ERXNXQTg4ZGovQ0t2QWZTUHNMTUVZTWFrUlprU1lZ
+ N3JUNG8reTdiMUdwZW5MN25QVHVjbExVNHJicXgvQmwzNytRPT0=
+
+# postfix, services, lab.local
+dn: cn=postfix,ou=services,dc=lab,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: postfix
+sn: postfix
+userPassword:: e1BCS0RGMi1TSEE1MTJ9MTAwMDAwJHZ5aStHbWVFQ3NKWHNlZjR1bXNpWmpDUkt
+ OQ1VINTh5JFdsR0lra1Z4N2ZFMU1MWnI5TnNXYW1mVzNhSWtDSU5MUDFBeHNzSlVsck5BN1E4Qyt2
+ Yisybng0TkQ2SktFSnBldEJQNkpKVEFwOURwOVdMckNDNCtRPT0=
+
+# dovecot, services, lab.local
+dn: cn=dovecot,ou=services,dc=lab,dc=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: dovecot
+sn: dovecot
+userPassword:: e1BCS0RGMi1TSEE1MTJ9MTAwMDAwJEtnRk12Sm8wU2xYZC84RHFtWWQyc045eGt
+ TU3VzRTkwJDlRckVWcXhveXd6RjdvK2hPSlg4K2ZWOGJ4RTA1Uk5YZ1A1VDNzMzhqRjNYeEJEMmxu
+ aGZLemdDTnI2YnBZS2dvTTZrbzBiZXZobEpDSDVWR0Jyb2l3PT0=
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 17
+# numEntries: 16
