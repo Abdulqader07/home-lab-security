@@ -5,7 +5,7 @@ objectClass: organizationalPerson
 objectClass: inetOrgPerson
 cn: postfix
 sn: postfix
-userPassword: 12345678
+userPassword: REDACTED
 
 dn: cn=dovecot,ou=services,dc=lab,dc=local
 objectClass: top
@@ -14,4 +14,4 @@ objectClass: organizationalPerson
 objectClass: inetOrgPerson
 cn: dovecot
 sn: dovecot
-userPassword: 12345678
+userPassword: REDACTED

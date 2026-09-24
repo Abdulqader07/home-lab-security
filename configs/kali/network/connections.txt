@@ -1,0 +1,35 @@
+[connection]
+id=Wired connection 1
+uuid=13145628-be0a-3498-ac18-9c40899fa5cd
+type=ethernet
+autoconnect-priority=-999
+interface-name=eth0
+timestamp=1790110622
+
+[ethernet]
+
+[ipv4]
+method=auto
+never-default=true
+
+[ipv6]
+addr-gen-mode=default
+method=auto
+
+[proxy]
+[connection]
+id=Wired connection 2
+uuid=e69c6f5f-a16c-42d2-bacc-7739ad794f04
+type=ethernet
+interface-name=eth1
+
+[ethernet]
+
+[ipv4]
+method=auto
+
+[ipv6]
+addr-gen-mode=default
+method=auto
+
+[proxy]

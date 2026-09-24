@@ -12,4 +12,4 @@ gidNumber: 10002
 homeDirectory: /home/sara
 loginShell: /bin/bash
 mail: sara@lab.local
-userPassword: 12345678
+userPassword: REDACTED

@@ -1,0 +1,4 @@
+NAME    UUID                                  TYPE      DEVICE 
+svrnet  7a3f5e95-997e-44fc-a22b-d4686a2617bb  ethernet  enp0s8 
+enp0s3  584943d3-e869-3532-86a1-d75332e5c8f8  ethernet  enp0s3 
+lo      e29d94b2-808b-4e6e-9c43-08cfbb57535f  loopback  lo     

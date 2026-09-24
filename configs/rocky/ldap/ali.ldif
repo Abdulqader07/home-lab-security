@@ -12,4 +12,4 @@ gidNumber: 10001
 homeDirectory: /home/ali
 loginShell: /bin/bash
 mail: ali@lab.local
-userPassword: 12345678
+userPassword: REDACTED

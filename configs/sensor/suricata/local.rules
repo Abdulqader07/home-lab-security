@@ -1,0 +1,5 @@
+alert tcp any any -> 192.168.20.0/24 25 (msg:"SMTP from outside the servers farm"; sid:10000001; rev:1;)
+alert tcp any any -> 192.168.20.0/24 22 (msg:"SSH from outside the servers farm"; sid:1000002; rev:1;)
+alert tcp any any -> 192.168.20.0/24 389 (msg:"LDAP from outside the servers farm"; sid:1000003; rev:1;)
+alert tcp any any -> 192.168.20.0/24 143 (msg:"IMAP from outside servers farm"; sid:1000004; rev:1;)
+alert icmp any any -> 192.168.20.0/24 any (msg:"ICMP to esrvers farm"; sid:1000005; rev:1;)
