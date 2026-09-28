@@ -18,7 +18,8 @@
 ./lab-up.sh
 ./attack.sh
 ./verify.sh
-./lab-down.sh```
+./lab-down.sh
+```
 
 
 
