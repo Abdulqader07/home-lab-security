@@ -32,27 +32,27 @@ cd scripts
 
 Docs
 
-    Scenario
+   Scenario
 
-    VirtualBox Setup
+   VirtualBox Setup
 
-    Rocky Linux Server
+   Rocky Linux Server
 
-    Kea DHCP
+   Kea DHCP
 
-    Unbound DNS
+   Unbound DNS
 
-    LDAP
+   LDAP
 
-    Mail
+   Mail
 
-    Sensor
+   Sensor
 
-    Suricata
+   Suricata
 
-    Automation
+   Automation
 
-    Permissions
+   Permissions
 
 
 Layout
