@@ -28,10 +28,12 @@
 Bridged management IPs change between locations. Edit
 scripts/config.sh once; everything else reads from it:
 
-```SENSOR_IP="20.20.20.39"
+```
+SENSOR_IP="20.20.20.39"
 ROCKY_IP="20.20.20.37"
 MAIL_IP="20.20.20.40"
-KALI_IP="20.20.20.50"```
+KALI_IP="20.20.20.50"
+```
 
 
 
