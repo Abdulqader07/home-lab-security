@@ -70,7 +70,7 @@ screenshots/— evidence
 
 ### `docs/01-scenario.md`
 
-```markdown
+markdown
 # Scenario
 
 A regional bank branch runs two servers:
