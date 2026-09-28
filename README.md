@@ -28,7 +28,7 @@ cd scripts
 ./attack.sh
 ./verify.sh
 ./lab-down.sh
-
+```
 
 Docs
 
